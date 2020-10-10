@@ -1,0 +1,15 @@
+{
+  "name": "covid-19",
+  "version": "1.0.0",
+  "description": "Covid-Live updates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Corona",
+    "Virus"
+  ],
+  "author": "Abhishek Gupta",
+  "license": "ISC"
+}

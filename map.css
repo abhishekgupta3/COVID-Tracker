@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    list-style: none;
+    text-decoration: none;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+body{
+    /* background-color:#364061 ; */
+    color: #DFDFEF;
+}
+::-webkit-scrollbar{
+    width: 0.8rem;
+}
+::-webkit-scrollbar-thumb{
+    background: #a1a0ac;
+    border-radius: .2rem;
+}
+.header{
+    width: 100vw;
+    height: 93vh;
+}
+.success{
+    color: rgb(101, 221, 155);
+}
+.danger{
+    color: #e02828;
+}
+.primary{
+    color: #1b95e0;
+}
+/* Start of navbar */
+nav{
+    background-color: rgb(26, 26, 26);
+    height: 9%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+}
+nav a{
+    margin: auto 3rem;
+    margin-right: 5rem;
+    cursor: pointer;
+    font-size: 2.4rem;
+    padding: 0 1.5rem;
+}
+nav a:hover{
+  color: #c7c7c9a6;
+}
+nav span{
+    color: rgb(211, 20, 58);
+    font-size: 1.6rem;
+}
+.title{
+    padding: 0rem 1.5rem;
+    margin-left: 5.5rem;
+    font-size: 1.4rem;
+    font-weight: 1000;
+    color: white;
+}
+.scroll{
+    background-color: rgb(26, 26, 26);
+    transition: all 0.7s ease-in-out;
+    height: 0rem;
+    z-index: 5;
+}
+.scroll ul{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+.scroll li{
+    padding: 1rem;
+}
+.scroll a{
+    color: #DFDFEF;
+}
+.scroll a:hover,a:active{
+    color: #ffffff48;
+}
+/* End of navbar */
+
+#map{
+    height: 85vh;
+    width: 100vw;
+}
+/* Footer */
+footer{
+    height: 3rem;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+/* EndofFooter */
+
+@media only screen and (max-width:500px){
+    .title{
+        margin-left: 1.5rem;
+        font-size: 1.3rem;
+    }
+    nav a{
+        margin-right: 3rem;
+    }
+}
+@media only screen and (max-width:400px){
+
+    .title{
+        margin-left: 1rem;
+        font-size: 1.3rem;
+    }
+    nav a{
+        margin: auto 1rem;
+        margin-right: 1rem;
+    }
+
+}
+@media only screen and (max-width:400px){
+    .title{
+        margin-left: .7rem;
+        font-size: 1.1rem;
+    }
+    nav a{
+        margin: auto 1rem;
+        margin-right: .7rem;
+    }
+
+}

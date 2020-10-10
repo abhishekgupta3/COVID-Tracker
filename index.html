@@ -1,0 +1,69 @@
+<!-- CORONA_TRACKER
+DATE:6/10/2020 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Corona Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/gif" sizes="256x256">
+    <link rel=" shortcut icon" href="favicon.png" />
+
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <div class="title"><span>C</span>orona<span>T</span>racker</div>
+            <a id="nav_scroll">&equiv;</a>
+        </nav>
+        <div class="scroll">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/map.html">Map</a></li>
+                <li><a href="/about.html">About</a></li>
+
+            </ul>
+        </div>
+        <div class="main-content">
+            <section class="left">
+                <h1>Quick Facts</h1>
+                <p>updated: <span class="updated-time"></span></p>
+                <span id="confirm" class="data primary"></span>
+                <span> Total Confirmed</span>
+                <span id="deaths" class="data danger"></span>
+                <span> Total Deceased</span>
+                <span id="recover" class="data success"></span>
+                <span> Total Recovered</span>
+
+            </section>
+            <section class="right">
+                <h1>India COVID-19 Stats</h1>
+                <div>
+                    <table>
+                        <thead>
+                            <tr class="table">
+                                <th class="state">State</th>
+                                <th>Confirmed</th>
+                                <th>Decreased</th>
+                                <th>Recovered</th>
+                            </tr>
+                        </thead>
+                        <hr>
+                        <tbody id="tbody"></tbody>
+
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2020. All Rights Reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

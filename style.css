@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    list-style: none;
+    text-decoration: none;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+body{
+    background-color:#364061 ;
+    color: #DFDFEF;
+}
+::-webkit-scrollbar{
+    width: 0.8rem;
+}
+::-webkit-scrollbar-thumb{
+    background: #a1a0ac;
+    border-radius: .2rem;
+}
+.header{
+    width: 100vw;
+    height: 100vh;
+
+}
+.success{
+    color: rgb(101, 221, 155);
+}
+.danger{
+    color: #e02828;
+}
+.primary{
+    color: #1b95e0;
+}
+/* Start of navbar */
+nav{
+    background-color: rgb(26, 26, 26);
+    height: 9%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+}
+nav a{
+    margin: auto 3rem;
+    margin-right: 5rem;
+    cursor: pointer;
+    font-size: 2.4rem;
+    padding: 0 1.5rem;
+}
+nav a:hover{
+  color: #c7c7c9a6;
+}
+nav span{
+    color: rgb(211, 20, 58);
+    font-size: 1.6rem;
+}
+.title{
+    padding: 0rem 1.5rem;
+    margin-left: 5.5rem;
+    font-size: 1.4rem;
+    font-weight: 1000;
+    color: white;
+}
+/* input{
+    padding: 0rem 1.5rem;
+    margin-right: 5rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    color: white;
+    background: black;
+    height: 1.7rem;
+    border: black; 
+    border: 1px solid black;
+}
+input:focus{
+    border: 1px solid black;
+    background: rgba(0, 0, 0, 0.781);
+    border-radius: unset;
+}
+input:hover{
+    border: 1px solid black;
+    background: rgba(5, 5, 5, 0.993);
+} */
+
+.scroll{
+    background-color: rgb(26, 26, 26);
+    transition: all 0.7s ease-in-out;
+    height: 0rem;
+    z-index: 5;
+}
+.scroll ul{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+.scroll li{
+    padding: 1rem;
+}
+.scroll a{
+    color: #DFDFEF;
+}
+.scroll a:hover,a:active{
+    color: #ffffff48;
+}
+/* End of navbar */
+.main-content{
+    height: 90%;
+    display: flex;
+}
+/* startOfSectionLeft */
+.left{
+    height: 78%;
+    width: 25%;
+    margin-left: 5rem;
+    margin-top: 3rem;
+    background-color: #445175;
+    border-radius: 1.3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.left h1{
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+.left span{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.left span.data{
+    margin-top: 1.1rem;
+    font-size: 3rem;
+    font-weight: 1000;
+}
+.left span.updated-time{
+   font-style: italic;
+    font-size: 1rem;
+}
+/* endOfSectionLeft */
+
+/* startOfSectionRight */
+
+.right{
+    width: 58%;
+    height: 90%;
+    margin-left: 5rem;
+    margin-top: 3rem;
+    background-color: #445175;
+    border-radius: 1.3rem;
+}
+.right h1{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+.right table{
+    display: flex;
+    width: 100%; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.right table thead,tbody{
+    width: 100%;
+    display: block;
+}
+.table{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align:center ;
+    margin-top: .7rem;
+    font-size: 1.2rem;
+}
+.table th,td{
+    width: 20%;
+    margin: 0.1rem 0rem;
+    font-size: 1.1rem;
+}
+ /* .state{
+    width: 40%; 
+ 
+} */
+/* Footer */
+
+footer{
+height: 3rem;
+text-align: center;
+background-color: rgb(26, 26, 26);
+}
+footer p{
+    margin-top: .7rem;
+}
+
+/* EndofFooter */
+
+/* Responsive */
+
+@media only screen and (max-width:1000px) and (min-width:200px){
+    .main-content{
+        flex-direction: column;
+        height: 130rem;
+    }
+    .left{
+        width: 85%;
+        margin:  2rem auto;
+        height: 200rem;
+
+    }
+    .right{
+        width: 85%;
+        margin:  0rem auto;
+        height: 600rem;
+        margin-bottom: 3rem;
+    }
+    input{
+        display: none;
+    }
+    .title{
+    padding: 0rem;
+    margin: auto;
+    }
+    .right h1{
+        font-size: 1.7rem;
+    }
+    .table th,td{
+        width: 23%;
+        margin: 0.1rem 0rem;
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width:1000px) and (min-width:500px){
+    .table th,td{
+        width: 22%;
+        font-size: 1.1rem;
+    }
+}
+@media only screen and (max-width:350px) and (min-width:0px){
+    .right h1{
+        font-size: 1.5rem;
+    }
+    .table th,td{
+        width: 23%;
+        font-size: 0.7rem;
+    }
+}
+@media only screen and (max-width:400px) and (min-width:325px){
+    .right h1{
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width:400px){
+    .title{
+        margin-left: .7rem;
+        font-size: 1.1rem;
+    }
+    nav a{
+        margin: auto 1rem;
+        margin-right: .7rem;
+    }
+
+}
+@media only screen and (max-width:600px) and (min-width:400px){
+    .title{
+        margin-left: 2rem;
+        font-size: 1.2rem;
+    }
+    nav a{
+        margin: auto 1rem;
+        margin-right: 1rem;
+    }
+
+}
+/* Responsive End*/
